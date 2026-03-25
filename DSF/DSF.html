@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dwarika StreetFood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8e7; /* light yellow */
+      color: #333;
+    }
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+.menu h2 {
+  text-align: center;
+  color: #d4a017;
+  letter-spacing: 1px;
+} 
+.about h2 {
+  text-align: center;
+  color: #d4a017;
+  letter-spacing: 1px;
+}
+.about p {
+  text-align: center;
+}
+.hours {
+  background: #fffdf5;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border: 1px solid #f3e2b3;
+  margin-bottom: 20px;
+}
+
+.hours h2 {
+  text-align: center;
+  color: #d4a017;
+  margin-top: 0;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  border-bottom: 1px dashed #e6d3a3;
+  font-size: 15px;
+}
+
+.time-row:last-child {
+  border-bottom: none;
+}
+
+.time-row span:first-child {
+  font-weight: 500;
+}
+    /* Header */
+    .header {
+      position: relative;
+      height: 260px;
+      background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+
+    .header p {
+      margin-top: 8px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* Container */
+    .container {
+      padding: 20px;
+    }
+
+    /* Menu Card */
+    .menu {
+      background: #fffdf5;
+      padding: 18px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+      border: 1px solid #f3e2b3;
+    }
+
+    .menu h2 {
+      margin-top: 0;
+      color: #d4a017;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e6d3a3;
+      font-size: 15px;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    /* Links */
+    .links {
+      display: flex;
+      justify-content: space-around;
+      margin: 25px 0;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    /* Instagram */
+    .links a:first-child {
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    }
+
+    /* Google Maps */
+    .links a:last-child {
+      background: linear-gradient(45deg, #34a853, #4285f4);
+    }
+
+    /* Hover */
+    .links a:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    }
+
+    /* About Section */
+    .about {
+      background: #fffdf5;
+      padding: 18px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      border: 1px solid #f3e2b3;
+    }
+
+    .about h2 {
+      color: #d4a017;
+      margin-top: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Dwarika StreetFood</h1>
+      <p>Delicious Food & Great Taste</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Menu -->
+    <div class="menu">
+      <h2>Menu</h2>
+
+      <div class="menu-item">
+        <span>Aloo Puri</span>
+        <span>₹20</span>
+      </div>
+
+      <div class="menu-item">
+        <span>Khavsa</span>
+        <span>₹60</span>
+      </div>
+
+      <div class="menu-item">
+        <span>Cheese Aloo Puri</span>
+        <span>₹30</span>
+      </div>
+    </div>
+ <div class="hours">
+  <h2>Opening Hours</h2>
+
+  <div class="time-row"><span>Monday</span><span>10:00 AM - 4:00 PM</span></div>
+  <div class="time-row"><span>Tuesday</span><span>10:00 AM - 4:00 PM</span></div>
+  <div class="time-row"><span>Wednesday</span><span>10:00 AM - 4:00 PM</span></div>
+  <div class="time-row"><span>Thursday</span><span>10:00 AM - 4:00 PM</span></div>
+  <div class="time-row"><span>Friday</span><span>10:00 AM - 4:00 PM</span></div>
+  <div class="time-row"><span>Saturday</span><span>10:00 AM - 4:00 PM</span></div>
+  <div class="time-row"><span>Sunday</span><span>Closed</span></div>
+
+</div>
+
+    <!-- Links -->
+<div class="links">
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/yourusername" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon">
+    Instagram
+  </a>
+
+  <!-- Google Maps -->
+  <a href="https://maps.google.com/?q=23.0225,72.5714" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon">
+    Find Us
+  </a>
+
+</div>
+
+    <!-- About -->
+    <div class="about">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Dwarika StreetFood! We serve fresh and delicious street food with authentic taste.
+        Come and enjoy quality food with your friends and family.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
